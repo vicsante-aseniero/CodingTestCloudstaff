@@ -9,7 +9,7 @@ namespace Diana.Code.Challenge
  /// </question>
  public sealed class SuperFastCache<T> : iCacheStuff<T> where T : employee
  {
-  private static readonly SuperFastCache<T> instance = new SuperFastCache<T>(); // Non-lazy or Eager loading Singleton
+  private static readonly SuperFastCache<T> instance = new SuperFastCache<T>(); // Non-lazy or Eager loading Singleton Design Pattern
   public static Dictionary<Guid, T> Dict { get; private set; } = new Dictionary<Guid, T>();
   public string CacheName => "Super Fast Cache x1000 faster!\r\n\r\nTODO: Please Implement this class and make it super fast.\r\n";
 
